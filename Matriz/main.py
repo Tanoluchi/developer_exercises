@@ -44,7 +44,7 @@ def consecutive_numbers(array):
                     count += 1
                     pf = [i, column]
                     break
-                # Se verifica si es igual valor en n y si mientras el contador es distinto a 4, sumamos 1 y continuamos.
+                # Se verifica si es igual al valor en n y si mientras el contador es distinto a 4, sumamos 1 y continuamos.
                 elif array[i][column] == n and count != 4:
                     count += 1
                 # Si no se ha encontrado ninguna coincidencia entonces el contador se reinicia a 0.
@@ -84,7 +84,8 @@ def consecutive_numbers(array):
     if is_vertical_sequence == False:
         print("\nNo se ha encontrado una secuencia de manera vertical.")
     if is_horizontal_sequence == False:
-        print("\nNo se ha encontrado una secuencia de manera horizontal")
+        print("\nNo se ha encontrado una secuencia de manera horizontal.")
+
 
 #print(consecutive_numbers(create_array()))
 consecutive_numbers(create_array())
